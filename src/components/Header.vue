@@ -1,7 +1,7 @@
 <template>
    <header>
 
-      <Navbar />
+      <Navbar :navList="navList" />
 
       <Jumbotron />
 
