@@ -1,0 +1,11 @@
+@mixin title ($size: 'xl') {
+   @if $size == 'md' {font-size: 2rem;}
+   @if $size == 'sm' {font-size: 1.5rem;}
+   @else if $size == 'xl' {font-size: 2.5rem;}
+}
+
+@mixin positionCenter {
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}

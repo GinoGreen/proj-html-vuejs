@@ -102,7 +102,7 @@ export default {
                height: 18px;
       
                position: absolute;
-               top: -12px;
+               top: -6px;
                right: -12px;
 
                font-size: 13px;
