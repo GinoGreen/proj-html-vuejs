@@ -2,9 +2,9 @@
    <section class="text-center">
 
       <div class="title">
-         <h1>Learn At Your Own Pace!</h1>
+         <h1 class="fw-bold">Learn At Your Own Pace!</h1>
 
-         <p class="sub-title">Get teamed up with people of the same will.</p>
+         <p>Get teamed up with people of the same will.</p>
 
          <button class="btn-custom"><a href="#">Get started for free</a></button>
       </div>
@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 @import '../assets/style/mixins.scss';
 
@@ -38,6 +38,10 @@ export default {
       
          h1 {
             @include title();
+         }
+         p {
+            @include subTitle('white');
+            font-size: 1rem;
          }
          button {
             margin: 10px 0;
@@ -63,6 +67,7 @@ export default {
 
             border: 15px solid #fff;
             border-radius: 10px;
+            cursor: pointer;
             
             img {
                height: 100%;

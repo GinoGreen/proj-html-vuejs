@@ -9,3 +9,9 @@
    left: 50%;
    transform: translate(-50%, -50%);
 }
+
+@mixin subTitle ($color: 'black') {
+   font-size: 0.7rem;
+   @if ($color == 'white') {color: rgba(#fff, .7);}
+   @else {color: rgba(#000, .7);}
+}

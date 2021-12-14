@@ -25,7 +25,4 @@ export default {
 <style lang="scss">
 @import './assets/style/generals.scss';
 
-#app {
-  
-}
 </style>

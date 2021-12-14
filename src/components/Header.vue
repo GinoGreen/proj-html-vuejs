@@ -32,6 +32,17 @@ export default {
    header {
       color: #fff;
       background-color: $port-gore;
+      position: relative;
    }
+   // header::after {
+   //    content: "";
+   //    position: absolute;
+   //    top: 100%;
+   //    left: 0;
+   //    height: 110px;
+   //    width: 100%;
+   //    background: url(../assets/img/big.svg) bottom center;
+   //    background-size: cover;
+   // }
 
 </style>
