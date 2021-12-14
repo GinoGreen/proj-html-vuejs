@@ -57,6 +57,7 @@
                         </li>
                      </ul>
                   </div>
+                  <button class="btn-custom"><a href="#">Get started for free</a></button>
                </div>
             </div>
          </div>
@@ -182,6 +183,7 @@ export default {
                letter-spacing: .1em;
             }
             h2 {
+               margin: 30px 0;
                font-weight: bold;
                @include title;
                .evidence {
@@ -191,7 +193,7 @@ export default {
                }
             }
             .list-services {
-               padding: 20px 0;
+               padding: 30px 0;
 
                li {
                   height: 45px;
