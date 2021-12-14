@@ -1,7 +1,7 @@
 <template>
    <main>
 
-      <Service :objectsLearned="objectsLearned" :serviceCaptions="serviceCaptions" />
+      <Service :objectsLearned="objectsLearned" :servicesCaptions="servicesCaptions" :servicesList="servicesList" />
 
    </main>
 </template>
@@ -33,7 +33,7 @@ export default {
                count: '100%'
             },
          ],
-         serviceCaptions: [
+         servicesCaptions: [
             {
                title: 'graphic design',
                caption: 'Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.',
@@ -55,6 +55,12 @@ export default {
                imgPath: require('../assets/img/home-6-service-image-04.png'),
             },
          ],
+         servicesList: [
+            'Select & customize courses to your preferences',
+            'Change the tuto and make arrangements',
+            'Partecipate in events to join others',
+            'Get the desired certificate delivered at house',
+         ]
       }
    }
 }

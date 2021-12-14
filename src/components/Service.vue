@@ -28,8 +28,8 @@
                <div class="row">
                   <div 
                      class="col-6 dad"
-                     v-for="(service, index) in serviceCaptions"
-                     :key="`serviceCaptions ${index}`"
+                     v-for="(service, index) in servicesCaptions"
+                     :key="`servicesCaptions ${index}`"
                   >
                      <div class="myCard">
                         <div class="text">
@@ -42,7 +42,23 @@
                </div>
             </div>
             <!-- can provide get started for free -->
-            <div class="col-6"></div>
+            <div class="col-5 d-flex align-items-center">
+               <div class="services-provides">
+                  <span class="text-uppercase">togheter we can create</span>
+                  <h2 class="text-capitalize">Services we <span class="evidence">can provide</span> for my clients.</h2>
+                  <div>
+                     <ul class="list-services">
+                        <li
+                           v-for="(item, index) in servicesList"
+                           :key="`servicesList ${index}`"
+                        >
+                           <i class="fas fa-check"></i>
+                           <span>{{ item }}</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
 
@@ -54,7 +70,8 @@ export default {
    name: 'Service',
    props: {
       objectsLearned: Array,
-      serviceCaptions: Array
+      servicesCaptions: Array,
+      servicesList: Array
    }
 }
 </script>
@@ -154,6 +171,39 @@ export default {
             // translate dispari
             &:nth-child(odd) {
                transform: translateY(-15%);
+            }
+         }
+
+         .services-provides {
+            padding-left: 60px;
+            span {
+               @include subTitle;
+               font-size: 1rem;
+               letter-spacing: .1em;
+            }
+            h2 {
+               font-weight: bold;
+               @include title;
+               .evidence {
+                  color: $jungle-green;
+                  font-weight: normal;
+                  @include title;
+               }
+            }
+            .list-services {
+               padding: 20px 0;
+
+               li {
+                  height: 45px;
+                  i {
+                     color: $jungle-green;
+                     font-size: 20px;
+                     vertical-align: middle;
+                  }
+                  span {
+                     padding-left: 20px;
+                  }
+               }
             }
          }
       }
