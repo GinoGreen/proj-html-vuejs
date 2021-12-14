@@ -3,15 +3,19 @@
 
       <Service :objectsLearned="objectsLearned" :servicesCaptions="servicesCaptions" :servicesList="servicesList" />
 
+      <Courses :courses="courses" />
+
    </main>
 </template>
 
 <script>
+import Courses from './Courses.vue'
 import Service from './Service.vue'
 export default {
    name: 'Main',
    components: {
-      Service
+      Service,
+      Courses
    },
    data() {
       return {
@@ -60,6 +64,50 @@ export default {
             'Change the tuto and make arrangements',
             'Partecipate in events to join others',
             'Get the desired certificate delivered at house',
+         ],
+         courses: [
+            {
+               imgPath: require('../assets/img/course-02-480x298.jpg'),
+               price: '40',
+               caption: 'Learning to Write as a Professional Author',
+               lessons: 20,
+               students: 50,
+            },
+            {
+               imgPath: require('../assets/img/stock-full-hd-03-480x298.jpg'),
+               price: 'Free',
+               caption: 'Customer-centric Info-Tech Strategies',
+               lessons: 24,
+               students: 769,
+            },
+            {
+               imgPath: require('../assets/img/stock-full-hd-04-480x298.jpg'),
+               price: '19',
+               caption: 'Oper programming Courses for Everyone: Python',
+               lessons: 17,
+               students: 62,
+            },
+            {
+               imgPath: require('../assets/img/stock-full-hd-06-480x298.jpg'),
+               price: '26',
+               caption: 'Academic Listening and Note-taking',
+               lessons: 14,
+               students: 67,
+            },
+            {
+               imgPath: require('../assets/img/course-featured-image-01-480x298.jpg'),
+               price: '39',
+               caption: 'Master jQuery in a Short Period of Time',
+               lessons: 6,
+               students: 51,
+            },
+            {
+               imgPath: require('../assets/img/stock-full-hd-05-480x298.jpg'),
+               price: '59',
+               caption: 'Introduction to Javascript for Beginners',
+               lessons: 14,
+               students: 76,
+            },
          ]
       }
    }
