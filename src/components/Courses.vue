@@ -58,7 +58,7 @@ export default {
 @import '../assets/style/mixins.scss';
 
    section.courses {
-      padding: 100px 0;
+      padding: 90px 0;
       background-color: #f6f3f6;
       
       .myCards {

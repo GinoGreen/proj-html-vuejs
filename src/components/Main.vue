@@ -5,17 +5,21 @@
 
       <Courses :courses="courses" />
 
+      <Clients :clients="clients" />
+
    </main>
 </template>
 
 <script>
+import Clients from './Clients.vue'
 import Courses from './Courses.vue'
 import Service from './Service.vue'
 export default {
    name: 'Main',
    components: {
       Service,
-      Courses
+      Courses,
+      Clients,
    },
    data() {
       return {
@@ -108,6 +112,14 @@ export default {
                lessons: 14,
                students: 76,
             },
+         ],
+         clients: [
+            require('../assets/img/client-logo-colored-01.png'),
+            require('../assets/img/client-logo-colored-02.png'),
+            require('../assets/img/client-logo-colored-03.png'),
+            require('../assets/img/client-logo-colored-04.png'),
+            require('../assets/img/client-logo-colored-05.png'),
+            require('../assets/img/client-logo-colored-06.png'),
          ]
       }
    }
