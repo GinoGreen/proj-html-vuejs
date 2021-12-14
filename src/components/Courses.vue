@@ -24,11 +24,11 @@
                      </span>
                      <span class="price text-capitalize" v-else>{{ course.price }}</span>
                      <p>{{ course.caption }}</p>
-                     <span class="lessons">
+                     <span class="info-span">
                         <i class="far fa-file-alt"></i>
                         {{ course.lessons }} Lessons
                      </span>
-                     <span class="students">
+                     <span class="info-span">
                         <i class="far fa-user"></i>
                         {{ course.students }} Students
                      </span>
@@ -59,7 +59,7 @@ export default {
 
    section.courses {
       padding: 90px 0;
-      background-color: #f6f3f6;
+      background-color: $bg-color-gray;
       
       .myCards {
          margin: 60px 0;
@@ -91,18 +91,11 @@ export default {
                   }
                }
                p {
+                  color: $port-gore;
                   font-weight: bold;
                   font-size: 1.3rem;
                }
-               span.lessons,
-               span.students {
-                  margin-right: 30px;
-                  color: rgba(0, 0, 0, .6);
-                  font-size: .9rem;
-                  i {
-                     margin-right: 7px;
-                  }
-               }
+               
             }
          }
       }

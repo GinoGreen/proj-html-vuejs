@@ -48,3 +48,12 @@ a:active {
    font-size: 1rem;
    letter-spacing: .1em;
 }
+
+span.info-span {
+   margin-right: 30px;
+   color: rgba(0, 0, 0, .6);
+   font-size: .9rem;
+   i {
+      margin-right: 7px;
+   }
+}

@@ -7,10 +7,13 @@
 
       <Clients :clients="clients" />
 
+      <Articles :articles="articles" />
+
    </main>
 </template>
 
 <script>
+import Articles from './Articles.vue'
 import Clients from './Clients.vue'
 import Courses from './Courses.vue'
 import Service from './Service.vue'
@@ -20,6 +23,7 @@ export default {
       Service,
       Courses,
       Clients,
+      Articles,
    },
    data() {
       return {
@@ -120,6 +124,29 @@ export default {
             require('../assets/img/client-logo-colored-04.png'),
             require('../assets/img/client-logo-colored-05.png'),
             require('../assets/img/client-logo-colored-06.png'),
+         ],
+         articles: [
+            {
+               artist: 'artist',
+               imgPath: require('../assets/img/artist-blog-03-480x325.jpeg'),
+               title: 'Brush Strokes Energize Trees in Paintings',
+               date: 'May, 15, 2020',
+               views: 688,
+            },
+            {
+               artist: 'artist',
+               imgPath: require('../assets/img/artist-blog-01-480x325.jpg'),
+               title: 'Pocket-Sized Notebooks Hold Miniature Paintings',
+               date: 'May, 15, 2020',
+               views: 603,
+            },
+            {
+               artist: 'artist',
+               imgPath: require('../assets/img/artist-blog-02-480x325.jpg'),
+               title: 'Connection Between Self-Portraits and Identiy',
+               date: 'May, 15, 2020',
+               views: 397,
+            },
          ]
       }
    }
