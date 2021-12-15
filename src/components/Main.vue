@@ -11,10 +11,13 @@
 
       <Helps :helps="helps" />
 
+      <GetStarted />
+
    </main>
 </template>
 
 <script>
+import GetStarted from './GetStarted.vue'
 import Helps from './Helps.vue'
 import Articles from './Articles.vue'
 import Clients from './Clients.vue'
@@ -28,6 +31,7 @@ export default {
       Clients,
       Articles,
       Helps,
+      GetStarted,
    },
    data() {
       return {
