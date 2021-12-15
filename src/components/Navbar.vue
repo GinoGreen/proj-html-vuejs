@@ -61,6 +61,7 @@ export default {
 
    nav {
       padding: 15px;
+      z-index: 200;
 
       .logo {
          width: 200px;

@@ -33,9 +33,11 @@ export default {
 @import '../assets/style/mixins.scss';
 
    section {
-
+      z-index: 100;
       .title {
          margin-top: 70px;
+         z-index: 100;
+
       
          h1 {
             @include title();
@@ -45,9 +47,11 @@ export default {
             font-size: 1rem;
          }
          button.btn-custom {
+            z-index: 100;
             margin: 10px 0;
             transition: $transition;
             & a {
+               z-index: 100;
                transition: $transition;
             }
             &:hover {
@@ -60,6 +64,7 @@ export default {
       }
 
       .jumbo-images {
+         z-index: 200;
          width: 1400px;
          max-width: 100%;
          height: 380px;
