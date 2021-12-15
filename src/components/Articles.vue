@@ -61,7 +61,7 @@ export default {
                border-radius: 6px;
                overflow: hidden;
             }
-            span {
+            span.upper-subtitle {
                margin: 20px 0;
                display: inline-block;
             }

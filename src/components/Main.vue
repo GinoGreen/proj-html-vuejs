@@ -9,10 +9,13 @@
 
       <Articles :articles="articles" />
 
+      <Helps :helps="helps" />
+
    </main>
 </template>
 
 <script>
+import Helps from './Helps.vue'
 import Articles from './Articles.vue'
 import Clients from './Clients.vue'
 import Courses from './Courses.vue'
@@ -24,6 +27,7 @@ export default {
       Courses,
       Clients,
       Articles,
+      Helps,
    },
    data() {
       return {
@@ -146,6 +150,28 @@ export default {
                title: 'Connection Between Self-Portraits and Identiy',
                date: 'May, 15, 2020',
                views: 397,
+            },
+         ],
+         helps: [
+            {
+               imgPath: require('../assets/img/idea-discussion.png'),
+               title: 'idea discussion',
+               caption: 'Get teamed up with the specialists who work and teach coding for years at famous universities.',
+            },
+            {
+               imgPath: require('../assets/img/web-development.png'),
+               title: 'web development',
+               caption: 'Learn to start building a webpage from scratch. You decide your own pace, course, and speed.',
+            },
+            {
+               imgPath: require('../assets/img/system-administration.png'),
+               title: 'system administration',
+               caption: 'Learners are encouraged to study the mechanism and structure of system administration.',
+            },
+            {
+               imgPath: require('../assets/img/graphic-design.png'),
+               title: 'graphic design',
+               caption: 'Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.',
             },
          ]
       }
