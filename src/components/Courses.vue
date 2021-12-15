@@ -67,6 +67,14 @@ export default {
          .myCard {
             margin: 35px 0;
             padding: 10px;
+            cursor: pointer;
+            transition: $transition;
+
+            &:hover {
+               background-color: #fff;
+               box-shadow: $shadow;
+               border-radius: 6px;
+            }
             .image {
                width: 170px;
                height: 170px;

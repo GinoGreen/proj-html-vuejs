@@ -29,6 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 
+@import '../assets/style/vars.scss';
 @import '../assets/style/mixins.scss';
 
    section {
@@ -43,8 +44,18 @@ export default {
             @include subTitle('white');
             font-size: 1rem;
          }
-         button {
+         button.btn-custom {
             margin: 10px 0;
+            transition: $transition;
+            & a {
+               transition: $transition;
+            }
+            &:hover {
+               background-color: #fff;
+               & a {
+                  color: $jungle-green;
+               }
+            }
          }
       }
 
