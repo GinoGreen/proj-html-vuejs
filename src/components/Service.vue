@@ -2,21 +2,23 @@
    <section class="service">
       <div class="container">
 
-         <div class="title container">
-            <h3 class="fw-bold">Let passion and determination be the guide along the way and develop at your own pace that's comfortable.</h3>
-            <p class="text-uppercase">fannie moreno</p>
-            <span>/Founder & CEO</span>
-         </div>
+         <div class="background-balls">
+            <div class="title container">
+               <h3 class="fw-bold">Let passion and determination be the guide along the way and develop at your own pace that's comfortable.</h3>
+               <p class="text-uppercase">fannie moreno</p>
+               <span>/Founder & CEO</span>
+            </div>
 
-         <div class="object-learned container">
-            <div class="row">
-               <div 
-                  class="item col-3 text-center"
-                  v-for="(object, index) in objectsLearned"
-                  :key="`objectsLearned ${index}`"
-               >
-                  <p class="object-count">{{ object.count }}</p>
-                  <p class="object-type text-uppercase">{{ object.type }}</p>
+            <div class="object-learned container">
+               <div class="row">
+                  <div 
+                     class="item col-3 text-center"
+                     v-for="(object, index) in objectsLearned"
+                     :key="`objectsLearned ${index}`"
+                  >
+                     <p class="object-count">{{ object.count }}</p>
+                     <p class="object-type text-uppercase">{{ object.type }}</p>
+                  </div>
                </div>
             </div>
          </div>
@@ -84,42 +86,46 @@ export default {
 @import '../assets/style/mixins.scss';
 
    section.service {
-
       & > .container {
          background-image: url('../assets/img/background-pattern-grid-line.png');
          background-size: 31%;
 
-         .title {
-            max-width: 700px;
-            padding: 200px 0 100px;
-            text-align: center;
+         .background-balls {
+            background-image: url('../assets/img/background-balls.png');
+            background-size: 88%;
             
-            h3 {
-               margin: 40px;
-               line-height: 46px;
+            .title {
+               max-width: 700px;
+               padding: 200px 0 100px;
+               text-align: center;
+               
+               h3 {
+                  margin: 40px;
+                  line-height: 46px;
+               }
+               p {
+                  margin: 2px 0;
+                  font-size: 0.8rem;
+                  font-weight: bold;
+               }
+               span {
+                  @include subTitle();
+               }
             }
-            p {
-               margin: 2px 0;
-               font-size: 0.8rem;
-               font-weight: bold;
-            }
-            span {
-               @include subTitle();
-            }
-         }
-   
-         .object-learned {
-            
-            .object-count {
-               font-size: 2.2rem;
-               font-weight: bold;
-               color: $jungle-green;
-            }
-            .object-type {
-               @include subTitle;
-               font-weight: bold;
-               font-size: .8rem;
-               letter-spacing: 0.1em;
+      
+            .object-learned {
+               
+               .object-count {
+                  font-size: 2.2rem;
+                  font-weight: bold;
+                  color: $jungle-green;
+               }
+               .object-type {
+                  @include subTitle;
+                  font-weight: bold;
+                  font-size: .8rem;
+                  letter-spacing: 0.1em;
+               }
             }
          }
    

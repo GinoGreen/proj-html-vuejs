@@ -1,5 +1,6 @@
 <template>
    <section>
+      <img src="../assets/img/background-balls.png" alt="">
 
       <div class="title text-center">
          <h4 class="fw-bold">Start today for getting <span class="evidence">Online Certification</span></h4>
@@ -25,6 +26,15 @@ export default {
 
    section {
       padding: 100px 0;
+      position: relative;
+      img {
+         width: 60%;
+         position: absolute;
+         bottom: 0;
+         left: 50%;
+         transform: translateX(-50%);
+         z-index: -1;
+      }
 
       .title {
 

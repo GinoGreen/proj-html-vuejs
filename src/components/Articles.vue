@@ -1,11 +1,13 @@
 <template>
    <section>
 
+      <!-- titolo -->
       <div class="title text-center">
          <span class="text-uppercase upper-subtitle">enjoy reading on maxcoach</span>
          <h2 class="title-section">Latest on <span class="evidence">Our Blogs</span></h2>
       </div>
 
+      <!-- articoli blog -->
       <div class="container">
          <div class="row articles">
             <div 
