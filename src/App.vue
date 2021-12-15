@@ -2,7 +2,7 @@
   <div id="app">
     <Header />
     <Main />
-    <Footer />
+    <Footer :footerLists="footerLists" />
   </div>
 </template>
 
@@ -18,6 +18,37 @@ export default {
     Main,
     Footer
 
+  },
+  data() {
+    return {
+      footerLists: [
+        {
+          title: 'explore',
+          voices: [
+            'Start here',
+            'Blog',
+            'About us',
+          ],
+        },
+        {
+          title: '',
+          voices: [
+            'Success story',
+            'Courses',
+            'Contact us',
+          ],
+        },
+        {
+          title: 'information',
+          voices: [
+            'Membership',
+            'Purchase guide',
+            'Privacy policy',
+            'Terms of services',
+          ],
+        },
+      ]
+    }
   }
 }
 </script>
