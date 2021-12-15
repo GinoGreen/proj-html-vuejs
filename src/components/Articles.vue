@@ -56,10 +56,26 @@ export default {
          margin-top: 70px;
 
          .article {
-
+            cursor: pointer;
+            transition: $transition;
+            &:hover {
+               transform: scale(1.02);
+            }
             .myImage {
+               height: 325px;
+               width: 100%;
+               position: relative;
                border-radius: 6px;
                overflow: hidden;
+               &:hover img {
+                  height: 100%;
+               }
+               img {
+                  height: 120%;
+                  position: absolute;
+                  @include positionCenter;
+                  transition: $transition;
+               }
             }
             span.upper-subtitle {
                margin: 20px 0;
