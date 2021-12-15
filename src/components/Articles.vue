@@ -58,9 +58,6 @@ export default {
          .article {
             cursor: pointer;
             transition: $transition;
-            &:hover {
-               transform: scale(1.02);
-            }
             .myImage {
                height: 325px;
                width: 100%;
@@ -69,12 +66,14 @@ export default {
                overflow: hidden;
                &:hover img {
                   height: 100%;
+                  filter: brightness(1);
                }
                img {
                   height: 120%;
                   position: absolute;
                   @include positionCenter;
                   transition: $transition;
+                  filter: brightness(.65);
                }
             }
             span.upper-subtitle {
